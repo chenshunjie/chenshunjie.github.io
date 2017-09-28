@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>小蛋壳</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-09-26T11:07:06.605Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&lt;font color=&quot;#FF0000&quot;&gt;正确理解和使用GBK及UTF-8网页编码&lt;/font&gt;</title>
+    <link href="http://yoursite.com/2017/09/28/utf-8%E4%B8%8Egbk%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://yoursite.com/2017/09/28/utf-8与gbk的区别/</id>
+    <published>2017-09-28T12:36:47.692Z</published>
+    <updated>2017-09-26T11:07:06.605Z</updated>
+    
+    <content type="html"><![CDATA[<hr><a id="more"></a><the rest="" of="" contents|余下全文=""><p>###正确理解和使用GBK及UTF-8网页编码###<br>第一次跟着教程写实例时，出现了很头疼的错误，当时才接触，所以对HTML之类的了解的比较少。先说我出现的问题吧。</p><p>（1）在没下载Notepad++前，我用的是记事本。保存后在网页上运行竟然出现了乱码。</p><p><img src="https://i.imgur.com/d3l2LPT.png" alt=""></p><p><img src="https://i.imgur.com/0WJGpES.png" alt=""></p><p>换成GB2312能正确显示中文。</p><p><img src="https://i.imgur.com/3ofp8EB.png" alt=""></p><p>但是毕竟标准不一样。还是要用Utf-8。最后发现代码没有一点问题，问题就出在记事本身上。 <meta charset="utf-8"> 只是告诉浏览器要用utf-8来解释，而文档的编码，是在你保存时的选择决定的。如果保存ANSI() 然后用utf-8解释，肯定是乱码。记事本的话，默认保存的文件格式是ANSI。所以在保存的时候要修改为uif-8。记事本编写的同鞋一定要注意了。</p><p><img src="https://i.imgur.com/76C0f1z.png" alt=""></p><p>注：ANSI是一种字符代码，为使计算机支持更多语言，通常使用 0x00~0x7f 范围的1 个字节来表示 1 个英文字符。ANSI编码表示英文字符时用一个字节，表示中文用两个或四个字节。</p><p>科普一下：<br><br>UTF-8 GBK UTF8 GB2312 之间的区别和关系<br><br>UTF-8：Unicode TransformationFormat-8bit，允许含BOM，但通常不含BOM。是用以解决国际上字符的一种多字节编码，它对英文使用8位（即一个字节），中文使用24为（三个字节）来编码。UTF-8包含全世界所有国家需要用到的字符，是国际编码，通用性强。UTF-8编码的文字可以在各国支持UTF8字符集的浏览器上显示。如果是UTF8编码，则在外国人的英文IE上也能显示中文，他们无需下载IE的中文语言支持包。</p><p>GBK是国家标准GB2312基础上扩容后兼容GB2312的标准。GBK的文字编码是用双字节来表示的，即不论中、英文字符均使用双字节来表示，为了区分中文，将其最高位都设定成1。GBK包含全部中文字符，是国家编码，通用性比UTF8差，不过UTF8占用的数据库比GBD大。</p><p>GBK、GB2312等与UTF8之间都必须通过Unicode编码才能相互转换：</p><p>GBK、GB2312－－Unicode－－UTF8</p><p>UTF8－－Unicode－－GBK、GB2312</p><p>对于一个网站、论坛来说，如果英文字符较多，则建议使用UTF－8节省空间。不过现在很多论坛的插件一般只支持GBK。</p><p>简单来说，unicode，gbk和大五码就是编码的值，而utf-8,uft-16之类就是这个值的表现形式．而前面那三种编码是一兼容的，同一个汉字，那三个码值是完全不一样的．如＂汉＂的uncode值与gbk就是不一样的，假设uncode为a040，gbk为b030，而uft-8码，就是把那个值表现的形式．utf-8码完全只针对uncode来组织的，如果ＧＢＫ要转ＵＴＦ－８必须先转uncode码，再转utf-8就ＯＫ了．</p></the>]]></content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="&lt;font color=&quot;#FF0000&quot;&gt;utf、gbk&lt;/font&gt;" scheme="http://yoursite.com/tags/font-color-FF0000-utf%E3%80%81gbk-font/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;font color=&quot;#FF0000&quot;&gt;详细介绍弹性盒模型&lt;/font&gt;</title>
+    <link href="http://yoursite.com/2017/09/26/%E5%BC%B9%E6%80%A7%E7%9B%92%E6%A8%A1%E5%9E%8B/"/>
+    <id>http://yoursite.com/2017/09/26/弹性盒模型/</id>
+    <published>2017-09-26T08:32:10.000Z</published>
+    <updated>2017-09-26T08:33:13.900Z</updated>
+    
+    <content type="html"><![CDATA[<hr><a id="more"></a><p><the rest="" of="" contents|余下全文=""></the></p><p>##详细介绍弹性盒模型（display：flex）##<br>为容器指定弹性盒子，只需在父元素（也就是容器）中设置：<br>display：flex；<br><br>弹性布局（flexible box）模块旨在提供一个更加有效的方式来布置，对齐和分布在容器之间的各项内容，即使它们的大小是未知或者动态变化的。<br><br>最重要的是弹性盒子布局与方向无关，相对于常规的布局（块是垂直和内联水平为基础），很显然，这些工作以及网页设计缺乏灵活性，无法支持大型和复杂的应用程序（特别当它涉及到改变方向，缩放、拉伸和收缩等）。</p><p>###属性介绍###<br>display: flex | inline-flex; (适用于父类容器元素上)<br></p><p>定义一个flex容器，内联或者根据指定的值，来作用于下面的子类容器。<br><br>box：将对象作为弹性伸缩盒显示。（伸缩盒最老版本）（css3）<br><br>inline-box：将对象作为内联块级弹性伸缩盒显示。（伸缩盒最老版本）（CSS3）<br><br>flexbox：将对象作为弹性伸缩盒显示。（伸缩盒过渡版本）（CSS3）<br><br>inline-flexbox：将对象作为内联块级弹性伸缩盒显示。（伸缩盒过渡版本）（CSS3）<br><br>flex：将对象作为弹性伸缩盒显示。（伸缩盒最新版本）（CSS3）<br><br>inline-flex：将对象作为内联块级弹性伸缩盒显示。（伸缩盒最新版本）（CSS3）<br></p><p>著作权归作者所有。<br>商业转载请联系作者获得授权,非商业转载请注明出处。<br>链接:<a href="http://caibaojian.com/flexbox-guide.html" target="_blank" rel="external">http://caibaojian.com/flexbox-guide.html</a><br>来源:<a href="http://caibaojian.com" target="_blank" rel="external">http://caibaojian.com</a></p><p><b>justify-content (适用于父类容器上)</b></p><p>设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式。</p><p>当弹性盒里一行上的所有子元素都不能伸缩或已经达到其最大值时，这一属性可协助对多余的空间进行分配。当元素溢出某行时，这一属性同样会在对齐上进行控制。<br><br></p><p><b>align-items (适用于父类容器上)</b></p><p>设置或检索弹性盒子元素在侧轴（纵轴）方向上的对齐方式。<br></p><p><b>flex-grow (适用于弹性盒模型容器子元素)</b></p><p>设置或检索弹性盒的扩展比率。</p><p>根据弹性盒子元素所设置的扩展因子作为比率来分配剩余空间。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="&lt;font color=&quot;#FF0000&quot;&gt;flex-direction、flex-wrap，justify-content，flex-flow，align-items，align-content&lt;/font&gt;" scheme="http://yoursite.com/tags/font-color-FF0000-flex-direction%E3%80%81flex-wrap%EF%BC%8Cjustify-content%EF%BC%8Cflex-flow%EF%BC%8Calign-items%EF%BC%8Calign-content-font/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;font color=&quot;#FF0000&quot;&gt;HTML和css样式&lt;/font&gt;</title>
+    <link href="http://yoursite.com/2017/09/21/HTML%E4%B8%8Ecss/"/>
+    <id>http://yoursite.com/2017/09/21/HTML与css/</id>
+    <published>2017-09-21T15:01:10.000Z</published>
+    <updated>2017-09-23T07:07:09.487Z</updated>
+    
+    <content type="html"><![CDATA[<hr><a id="more"></a><p><the rest="" of="" contents|余下全文=""></the></p><h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a><div class="text" style="text-align:center;"><font color="red"><font size="18px">HTML</font></font></div></h2><h3 id="什么是HTML"><a href="#什么是HTML" class="headerlink" title="什么是HTML"></a><font color="blue">什么是HTML</font></h3><p>(1) HTML是用来描述网页的一种语言。<br><br>(2) HTML指的是超文本标记语言 (Hyper Text Markup Language),它不是一种编程语言，而是一种标记语言<br><br>(3)标记语言是一套标记标签(markup tag)<br><br>(4) HTML使用标记标签来描述网页<br><br>(5) HTML文档也叫做web页面.</p><h3 id="标签的语法"><a href="#标签的语法" class="headerlink" title="标签的语法"></a><font color="blue">标签的语法</font></h3><p>(1)标签由英文尖括号&#60;和&#62;括起来，如&#60;html&#62;就是一个标签。<br><br>(2)html中的标签一般都是成对出现的，分<b>开始标签</b>和<b>结束标签。</b>结束标签比开始标签多了一个/。<br><br>(3)标签与标签之间是可以嵌套的，但先后顺序必须保持一致，如：&#60;div&#62;里嵌套&#60;p&#62;，那么&#60;/p&#62;必须放在&#60;/div&#62;的前面。<br><br>(4)HTML标签不区分大小写，&#60;h1&#62;和&#60;H1&#62;是一样的，但建议小写，因为大部分程序员都以小写为主。</p><h3 id="HTML基础"><a href="#HTML基础" class="headerlink" title="HTML基础"></a><font color="blue">HTML基础</font></h3><p><b>(1)HTML标题（Heading)</b><br>HTML标题是通过<b>&#60;h1&#62;&#60;h6&#62;</b>等标签进行定义的。<br><br><br><b>(2)HTML段落</b><br>HTML段落是通过<b>标签&#60;p&#62;</b>来定义的。<br><br><b>(3)HTML链接</b><br>HTML链接是通过<b>标签&#60;a&#62;</b>来定义的，也叫<b>anchor</b>（锚点）元素，既可以用来链接到外部地址实现页面跳转功能，也可以链接到当前页面的某部分实现内部导航功能。<br><b>例如：&#60;a href=&#34;<a href="http://www.baidu.com&#34;&#62;这是百度网址的链接&#60;/a&amp;#62" target="_blank" rel="external">http://www.baidu.com&#34;&#62;这是百度网址的链接&#60;/a&amp;#62</a>;</b><br><b>HTML链接-target属性:</b><br>使用Target属性，你可以定义被链接的文档在何处显示。<br><br>_blank – 在新窗口中打开链接<br><br>_parent – 在父窗体中打开链接<br><br>_self – 在当前窗体打开链接,此为默认值<br><br>_top – 在当前窗体打开链接，并替换当前的整个窗体(框架页)<br><br>一个对应的框架页的名称 – 在对应框架页中打开<br><br><b>(4)HTML图像</b><br>HTML图像是通过<b>标签&#60;img&#62;</b>来定义的，使用img元素来为你的网站添加图片，使用src属性指向一个图片的具体地址。<br><b>注意：img元素是自闭元素，不需要结束标记。</b><br>实例：</p><p><img src="https://i.imgur.com/es33kQe.png" alt=""></p><p><img src="https://i.imgur.com/BXgrNyp.png" alt=""> </p><p><b>html中的url、href、src的区别</b><br><br>①URL 是一个网页地址。UR（LUniform  Resource Locators）（ 统一资源定位器。Web浏览器通过URL从Web服务器请求页面。<br><br>②url不是属性，而是属性值。src和href是属性。<br><br>规定图像的 URL。<br><br>可能的值：<br><br>绝对 URL - 指向其他站点（比如 src=”<a href="http://www.example.com/&quot;）" target="_blank" rel="external">http://www.example.com/&quot;）</a><br><br>相对 URL - 指向站点内的文件（比如 src=”/i/image.gif”）<br><br>③&#60;src&#62;用于替换当前元素，它的值是图像文件的 URL，也就是引用该图像的文件的的绝对路径或相对路径。<br><br>④href用于在当前文档和引用资源之间确立联系。也就是说src引用的路径是img自己的路径，href引用的路径是要跳转到的地方。<br><br>提示：为了整理文档的存储，创作者通常会把图像文件存放在一个单独的文件夹中，而且通常会将这些目录命名为 “pics” 或者 “images” 之类的名称。为了最大程度地简化路径,我们可以把大部分常用的图像都存到一个名为“image”的文件夹中。<br><br><b>(5)列表标记</b><br><br>a.有序列表&#60;ol&#62;<br><br>语法：<br><br>&#60;ol&#62;<br><br>&#160;&#160;&#160;&#60;li&#62;信息&#60;/li&#62;<br><br>&#160;&#160;&#160;&#60;li&#62;信息&#60;/li&#62;<br><br>&#60;/ol&#62;<br><br>&#60;ol&#62;在网页中显示的默认样式一般为：每项&#60;li&#62;前都自带一个序号，序号默认从1开始，<br><br><br>b.无序列表&#60;ul&#62;<br><br>语法：<br><br>&#60;ul&#62;<br><br>&#160;&#160;&#160;&#60;li&#62;信息&#60;/li&#62;<br><br>&#160;&#160;&#160;&#60;li&#62;信息&#60;/li&#62;<br><br>&#60;/ul&#62;<br><br>无序列表不用数字标记每个列表项，而采用一个符号标志每个列表项，例如圆黑点、方块等。</p><h3 id="HTML文档实例"><a href="#HTML文档实例" class="headerlink" title="HTML文档实例"></a><font color="blue">HTML文档实例</font></h3><p>&#60;!DOCTYPE html&#62;&#160;&#160;&#60;!–声明文档类型，有助于浏览器中正确显示网页。doctype的声明不区分大小写–&#62;<br><br><br>&#60;html&#62;&#60;!–定义整个HTML文档。–&#62;<br><br><br>&#60;head&#62;&#60;!–网页头部，设置网页基本信息以及对外通信。在&#60;head&#62;元素中你可以插入脚本（scripts）, 样式文件（CSS），及各种meta信息。–&#62;<br><br><br>&#60;title&#62;&#60;!–定义了HTML文档标题，描述元素的额外信息，作为工具条使用。&#62;&#60;/title&#62;<br><br><br>&#60;style&#62; &#60;!–定义了HTML文档的样式文件引用地址,在&#60;style&#62;元素中你需要指定样式文件来渲染HTML文档–&#62;<br>实例：</p><p><img src="https://i.imgur.com/k24lj3Q.png" alt=""></p><p>&#60;meta charset=&#34;UTF-8&#34;&#62; &#60;!–国际编码格式–&#62;<br><br>&#60;meta name=&#34;keywords&#34; content=&#34;  &#160;&#34;&#62; &#60;!–为搜索引擎定义关键词。&#62;<br><br>&#60;meta name=&#34;description&#34;  content=&#34;&#160; &#34;&#62; &#60;!–为网页定义描述内容–&#62;<br><br><br>&#60;link&#62; &#60;!–定义了文档与外部资源之间的关系。通常用于链接到样式表–&#62;<br><br>&#60;script&#62; &#60;!–用于加载脚本文件，如： JavaScript。–&#62;<br><br>&#60;/head&#62;<br><br>&#60;body&#62; &#60;!–定义网页主题–&#62;<br><br>&#60;h1&#62;这是一个标题&#60;/h1&#62;<br><br>&#60;p&#62;这是一个段落&#60;/p&#62;<br><br>&#60;/body&#62;<br><br>&#60;/html&#62;<br><br></p><h3 id="加入强调语气，使用-60-strong-62-和-60-em-62-标签"><a href="#加入强调语气，使用-60-strong-62-和-60-em-62-标签" class="headerlink" title="加入强调语气，使用&#60;strong&#62;和&#60;em&#62;标签"></a><font color="blue"><b>加入强调语气，使用&#60;strong&#62;和&#60;em&#62;标签</b></font><br></h3><p>但两者在强调的语气上有区别：&#60;em&#62;表示强调，&#60;strong&#62;表示更强烈的强调。并且在浏览器中&#60;em&#62;默认用<i>斜体</i>表示，&#60;strong&#62;用<b>粗体</b>表示。两个标签相比，目前国内前端程序员更喜欢使用&#60;strong&#62;表示强调。<br><br></p><p>###<font color="blue"><b>六、HTML里嵌入CSS的三种方式</b></font><br><br>CSS 可以通过以下方式添加到HTML中:<br><br><b>内联样式Inline（内联式）</b>- 在HTML元素中使用”style” 属性<br><br><b>内部样式表 Embedding（嵌入式）</b> -在HTML文档头部&#60;head&#62;区域使用&#60;style&#62; 元素 来包含CSS<br><br><b>外部引用Linking（引用式）</b> - 使用外部 CSS 文件<br></p><p>####<font color="green">1.嵌入式</font>####<br>使用HTML的style元素，在文档中定义CSS样式。<br><br>复制代码 代码如下:<br><br>&#60;head&#62;<br>&#60;style type=”text/css”&#62;<br><br>&#60;h1 style=”color:red;margin-center:50px;”&#62;这是一个标题<br><br>&#60;p style=”color:blue;margin-left:20px;”&#62;这是一个段落。&#60;/p&#62;<br><br>&#60;/style&#62;<br>&#60;head&#62;</p><p>####<font color="green">2.内联式</font>####<br>当特殊的样式需要应用到个别元素时，就可以使用内联样式。 使用内联样式的方法是在相关的标签中使用样式属性。样式属性可以包含任何 CSS 属性。以下实例显示出如何改变段落的颜色和左外边距。<br>复制代码 代码如下: <br> &#60;p style=”color:#FFF;font-weight:bold;”&#62;内联样式&#60;/p&#62;<br><br><b>a.HTML样式实例-背景颜色</b><br></p><p><font color="red">1)网页背景图片：</font><br><br>（平铺背景图片）<br><br>&#60;body background=d:\图片\未标题1.jpg&#62;<br><br>或者&#60;body style=background-image:url(d:\图片\未标题1.jpg)&#62;;<br><br>（背景图片不重复）<br><br><br>&#60;body style=background-image: url(d:\image\石家庄.jpg) no-repeat;&#62;<br><br>（背景图片居中不重复）<br><br><br>&#60;body style=background-image: url(d:\image\石家庄.jpg) no-repeat 50% 0;&#62;<br>注释：<br>style 后双引号部分为CSS样式；<br><br>background-image:url(图片路径) 为背景图片<br><br>no-repeat 不重复；<br><br>50% 0 即(水平位置 垂直位置) 水平50%既居中,垂直0px；<br><br></p><p><font color="red">2)表格中插入背景图片：</font><br><br><br>注意事项：<br><br>通过style属性来设置背景图片和用background属性的效果是不同的。直接上实例：<br><br>①用background属性设置背景图片，图片会重复出现。<br></p><p><img src="https://i.imgur.com/cNTJVVV.png" alt=""></p><p>页面效果：</p><p><img src="https://i.imgur.com/PePXVXg.png" alt=""></p><p>②我们稍微修改一下<table>标签的属性就可以让图片只出现一次——<br>通过style属性来设置背景图片，而不是直接设置background属性，<br>代码如下：<br></table></p><p><img src="https://i.imgur.com/rs1M97F.png" alt=""></p><p>页面效果：</p><p><img src="https://i.imgur.com/JrLBg4c.png" alt=""></p><p>其中，关键点在于后面的值的设置。除了”no-repeat”这个使图片不重<br>复的值，还有以下几个值可选：<br><br>repeat: 平铺整个页面,左右与上下<br><br>repeat-x: 在x轴上平铺,左右<br><br>repeat-y: 在y轴上平铺,上下<br><br>no-repeat: 图片不重复<br><br>inherit: 继承<br><br><br>另外，我们大家平时可能经常需要在表格的单元格内添加图片。除了和上面一样添加图片作为背景外，我们更常用的可能是把图片作为一个元素添加，代码如下：</p><p><img src="https://i.imgur.com/rzVbzGt.png" alt=""></p><p>页面效果：</p><p><img src="https://i.imgur.com/VZXBmHc.png" alt=""></p><p>####<font color="green">3.外部引用式</font>####<br>当样式需要被应用到很多页面的时候，外部样式表将是理想的选择。使用外部样式表，你就可以通过更改一个文件来改变整个站点的外观。<br><br><br>外部引用指HTML文档本身不含有CSS样式，而是动态引用外部的CSS文件定义文档的表现形式。<br><br>&#60;head&#62;<br><br>&#60;link&#160; rel=&#34;stylesheet&#34;&#160; type=”text/css” &#160;href=”mystyle.css”&#62;<br><br>&#60;/head&gt;&#62;<br><br></p><p>###<font color="blue"><b>HTML区块：&#60;div&#62;与&#60;span&#62;</b></font><br><br><b>(1)&#60;div&#62;元素</b><br><br>a：HTML&#60;div&#62;元素是块级元素，它是可用于组合其他 HTML 元素的容器。<br><br>b：如果与 CSS 一同使用，&#60;div&#62;元素可用于对大的内容块设置样式属性。<br><br>c：&#60;div&#62;元素的另一个常见的用途是文档布局。它取代了使用表格定义布局的老式方法。使用 &#60;table&#62;元素进行文档布局不是表格的正确用法。&#60;table&#62;元素的作用是显示表格化的数据。<br><br><b>(2)&#60;span&#62;元素</b><br><br>HTML &#60;span&#62; 元素是内联元素，可用作文本的容器 &#60;span&#62; 元素也没有特定的含义。 当与 CSS 一同使用时，&#60;span&#62; 元素可用于为部分文本设置样式属性。</p><p>###<font color="blue"><b>用css样式，为表格加入边框</b></font><br></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="&lt;font color=&quot;#FF0000&quot;&gt;HTML、CSS&lt;/font&gt;" scheme="http://yoursite.com/tags/font-color-FF0000-HTML%E3%80%81CSS-font/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2017/09/18/hello-world/"/>
+    <id>http://yoursite.com/2017/09/18/hello-world/</id>
+    <published>2017-09-18T11:06:00.000Z</published>
+    <updated>2017-09-18T11:08:46.530Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p><a id="more"></a><p><the rest="" of="" contents|="" 余下全文=""></the></p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+</feed>

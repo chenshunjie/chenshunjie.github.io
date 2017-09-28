@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="<font color="#FF0000">HTML、CSS</font>," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="小蛋壳" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="keywords" content="&lt;font color=&quot;#FF0000&quot;&gt;HTML、CSS&lt;&#x2F;font&gt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="&lt;font color=&quot;#FF0000&quot;&gt;HTML和css样式&lt;&#x2F;font&gt;">
+<meta property="og:url" content="http://yoursite.com/2017/09/21/HTML与css/index.html">
+<meta property="og:site_name" content="小蛋壳">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://i.imgur.com/es33kQe.png">
+<meta property="og:image" content="https://i.imgur.com/BXgrNyp.png">
+<meta property="og:image" content="https://i.imgur.com/k24lj3Q.png">
+<meta property="og:image" content="https://i.imgur.com/cNTJVVV.png">
+<meta property="og:image" content="https://i.imgur.com/PePXVXg.png">
+<meta property="og:image" content="https://i.imgur.com/rs1M97F.png">
+<meta property="og:image" content="https://i.imgur.com/JrLBg4c.png">
+<meta property="og:image" content="https://i.imgur.com/rzVbzGt.png">
+<meta property="og:image" content="https://i.imgur.com/VZXBmHc.png">
+<meta property="og:updated_time" content="2017-09-23T07:07:09.487Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="&lt;font color=&quot;#FF0000&quot;&gt;HTML和css样式&lt;&#x2F;font&gt;">
+<meta name="twitter:image" content="https://i.imgur.com/es33kQe.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/09/21/HTML与css/"/>
+
+
+
+
+
+  <title><font color="#FF0000">HTML和css样式</font> | 小蛋壳</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">小蛋壳</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/21/HTML与css/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小蛋壳">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline"><font color="#FF0000">HTML和css样式</font></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-21T23:01:10+08:00">
+                2017-09-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <hr>
+<a id="more"></a>
+<p><the rest="" of="" contents|余下全文=""></the></p>
+<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a><div class="text" style="text-align:center;"><font color="red"><font size="18px">HTML</font></font></div></h2><h3 id="什么是HTML"><a href="#什么是HTML" class="headerlink" title="什么是HTML"></a><font color="blue">什么是HTML</font></h3><p>(1) HTML是用来描述网页的一种语言。<br><br>(2) HTML指的是超文本标记语言 (Hyper Text Markup Language),它不是一种编程语言，而是一种标记语言<br><br>(3)标记语言是一套标记标签(markup tag)<br><br>(4) HTML使用标记标签来描述网页<br><br>(5) HTML文档也叫做web页面.</p>
+<h3 id="标签的语法"><a href="#标签的语法" class="headerlink" title="标签的语法"></a><font color="blue">标签的语法</font></h3><p>(1)标签由英文尖括号&#60;和&#62;括起来，如&#60;html&#62;就是一个标签。<br><br>(2)html中的标签一般都是成对出现的，分<b>开始标签</b>和<b>结束标签。</b>结束标签比开始标签多了一个/。<br><br>(3)标签与标签之间是可以嵌套的，但先后顺序必须保持一致，如：&#60;div&#62;里嵌套&#60;p&#62;，那么&#60;/p&#62;必须放在&#60;/div&#62;的前面。<br><br>(4)HTML标签不区分大小写，&#60;h1&#62;和&#60;H1&#62;是一样的，但建议小写，因为大部分程序员都以小写为主。</p>
+<h3 id="HTML基础"><a href="#HTML基础" class="headerlink" title="HTML基础"></a><font color="blue">HTML基础</font></h3><p><b>(1)HTML标题（Heading)</b><br>HTML标题是通过<b>&#60;h1&#62;&#60;h6&#62;</b>等标签进行定义的。<br><br><br><b>(2)HTML段落</b><br>HTML段落是通过<b>标签&#60;p&#62;</b>来定义的。<br><br><b>(3)HTML链接</b><br>HTML链接是通过<b>标签&#60;a&#62;</b>来定义的，也叫<b>anchor</b>（锚点）元素，既可以用来链接到外部地址实现页面跳转功能，也可以链接到当前页面的某部分实现内部导航功能。<br><b>例如：&#60;a href=&#34;<a href="http://www.baidu.com&#34;&#62;这是百度网址的链接&#60;/a&amp;#62" target="_blank" rel="external">http://www.baidu.com&#34;&#62;这是百度网址的链接&#60;/a&amp;#62</a>;</b><br><b>HTML链接-target属性:</b><br>使用Target属性，你可以定义被链接的文档在何处显示。<br><br>_blank – 在新窗口中打开链接<br><br>_parent – 在父窗体中打开链接<br><br>_self – 在当前窗体打开链接,此为默认值<br><br>_top – 在当前窗体打开链接，并替换当前的整个窗体(框架页)<br><br>一个对应的框架页的名称 – 在对应框架页中打开<br><br><b>(4)HTML图像</b><br>HTML图像是通过<b>标签&#60;img&#62;</b>来定义的，使用img元素来为你的网站添加图片，使用src属性指向一个图片的具体地址。<br><b>注意：img元素是自闭元素，不需要结束标记。</b><br>实例：</p>
+<p><img src="https://i.imgur.com/es33kQe.png" alt=""></p>
+<p><img src="https://i.imgur.com/BXgrNyp.png" alt=""> </p>
+<p><b>html中的url、href、src的区别</b><br><br>①URL 是一个网页地址。UR（LUniform  Resource Locators）（ 统一资源定位器。Web浏览器通过URL从Web服务器请求页面。<br><br>②url不是属性，而是属性值。src和href是属性。<br><br>规定图像的 URL。<br><br>可能的值：<br><br>绝对 URL - 指向其他站点（比如 src=”<a href="http://www.example.com/&quot;）" target="_blank" rel="external">http://www.example.com/&quot;）</a><br><br>相对 URL - 指向站点内的文件（比如 src=”/i/image.gif”）<br><br>③&#60;src&#62;用于替换当前元素，它的值是图像文件的 URL，也就是引用该图像的文件的的绝对路径或相对路径。<br><br>④href用于在当前文档和引用资源之间确立联系。也就是说src引用的路径是img自己的路径，href引用的路径是要跳转到的地方。<br><br>提示：为了整理文档的存储，创作者通常会把图像文件存放在一个单独的文件夹中，而且通常会将这些目录命名为 “pics” 或者 “images” 之类的名称。为了最大程度地简化路径,我们可以把大部分常用的图像都存到一个名为“image”的文件夹中。<br><br><b>(5)列表标记</b><br><br>a.有序列表&#60;ol&#62;<br><br>语法：<br><br>&#60;ol&#62;<br><br>&#160;&#160;&#160;&#60;li&#62;信息&#60;/li&#62;<br><br>&#160;&#160;&#160;&#60;li&#62;信息&#60;/li&#62;<br><br>&#60;/ol&#62;<br><br>&#60;ol&#62;在网页中显示的默认样式一般为：每项&#60;li&#62;前都自带一个序号，序号默认从1开始，<br><br><br>b.无序列表&#60;ul&#62;<br><br>语法：<br><br>&#60;ul&#62;<br><br>&#160;&#160;&#160;&#60;li&#62;信息&#60;/li&#62;<br><br>&#160;&#160;&#160;&#60;li&#62;信息&#60;/li&#62;<br><br>&#60;/ul&#62;<br><br>无序列表不用数字标记每个列表项，而采用一个符号标志每个列表项，例如圆黑点、方块等。</p>
+<h3 id="HTML文档实例"><a href="#HTML文档实例" class="headerlink" title="HTML文档实例"></a><font color="blue">HTML文档实例</font></h3><p>&#60;!DOCTYPE html&#62;&#160;&#160;&#60;!–声明文档类型，有助于浏览器中正确显示网页。doctype的声明不区分大小写–&#62;<br><br><br>&#60;html&#62;&#60;!–定义整个HTML文档。–&#62;<br><br><br>&#60;head&#62;&#60;!–网页头部，设置网页基本信息以及对外通信。在&#60;head&#62;元素中你可以插入脚本（scripts）, 样式文件（CSS），及各种meta信息。–&#62;<br><br><br>&#60;title&#62;&#60;!–定义了HTML文档标题，描述元素的额外信息，作为工具条使用。&#62;&#60;/title&#62;<br><br><br>&#60;style&#62; &#60;!–定义了HTML文档的样式文件引用地址,在&#60;style&#62;元素中你需要指定样式文件来渲染HTML文档–&#62;<br>实例：</p>
+<p><img src="https://i.imgur.com/k24lj3Q.png" alt=""></p>
+<p>&#60;meta charset=&#34;UTF-8&#34;&#62; &#60;!–国际编码格式–&#62;<br><br>&#60;meta name=&#34;keywords&#34; content=&#34;  &#160;&#34;&#62; &#60;!–为搜索引擎定义关键词。&#62;<br><br>&#60;meta name=&#34;description&#34;  content=&#34;&#160; &#34;&#62; &#60;!–为网页定义描述内容–&#62;<br><br><br>&#60;link&#62; &#60;!–定义了文档与外部资源之间的关系。通常用于链接到样式表–&#62;<br><br>&#60;script&#62; &#60;!–用于加载脚本文件，如： JavaScript。–&#62;<br><br>&#60;/head&#62;<br><br>&#60;body&#62; &#60;!–定义网页主题–&#62;<br><br>&#60;h1&#62;这是一个标题&#60;/h1&#62;<br><br>&#60;p&#62;这是一个段落&#60;/p&#62;<br><br>&#60;/body&#62;<br><br>&#60;/html&#62;<br><br></p>
+<h3 id="加入强调语气，使用-60-strong-62-和-60-em-62-标签"><a href="#加入强调语气，使用-60-strong-62-和-60-em-62-标签" class="headerlink" title="加入强调语气，使用&#60;strong&#62;和&#60;em&#62;标签"></a><font color="blue"><b>加入强调语气，使用&#60;strong&#62;和&#60;em&#62;标签</b></font><br></h3><p>但两者在强调的语气上有区别：&#60;em&#62;表示强调，&#60;strong&#62;表示更强烈的强调。并且在浏览器中&#60;em&#62;默认用<i>斜体</i>表示，&#60;strong&#62;用<b>粗体</b>表示。两个标签相比，目前国内前端程序员更喜欢使用&#60;strong&#62;表示强调。<br><br></p>
+<p>###<font color="blue"><b>六、HTML里嵌入CSS的三种方式</b></font><br><br>CSS 可以通过以下方式添加到HTML中:<br><br><b>内联样式Inline（内联式）</b>- 在HTML元素中使用”style” 属性<br><br><b>内部样式表 Embedding（嵌入式）</b> -在HTML文档头部&#60;head&#62;区域使用&#60;style&#62; 元素 来包含CSS<br><br><b>外部引用Linking（引用式）</b> - 使用外部 CSS 文件<br></p>
+<p>####<font color="green">1.嵌入式</font>####<br>使用HTML的style元素，在文档中定义CSS样式。<br><br>复制代码 代码如下:<br><br>&#60;head&#62;<br>&#60;style type=”text/css”&#62;<br><br>&#60;h1 style=”color:red;margin-center:50px;”&#62;这是一个标题<br><br>&#60;p style=”color:blue;margin-left:20px;”&#62;这是一个段落。&#60;/p&#62;<br><br>&#60;/style&#62;<br>&#60;head&#62;</p>
+<p>####<font color="green">2.内联式</font>####<br>当特殊的样式需要应用到个别元素时，就可以使用内联样式。 使用内联样式的方法是在相关的标签中使用样式属性。样式属性可以包含任何 CSS 属性。以下实例显示出如何改变段落的颜色和左外边距。<br>复制代码 代码如下: <br> &#60;p style=”color:#FFF;font-weight:bold;”&#62;内联样式&#60;/p&#62;<br><br><b>a.HTML样式实例-背景颜色</b><br></p>
+<p><font color="red">1)网页背景图片：</font><br><br>（平铺背景图片）<br><br>&#60;body background=d:\图片\未标题1.jpg&#62;<br><br>或者&#60;body style=background-image:url(d:\图片\未标题1.jpg)&#62;;<br><br>（背景图片不重复）<br><br><br>&#60;body style=background-image: url(d:\image\石家庄.jpg) no-repeat;&#62;<br><br>（背景图片居中不重复）<br><br><br>&#60;body style=background-image: url(d:\image\石家庄.jpg) no-repeat 50% 0;&#62;<br>注释：<br>style 后双引号部分为CSS样式；<br><br>background-image:url(图片路径) 为背景图片<br><br>no-repeat 不重复；<br><br>50% 0 即(水平位置 垂直位置) 水平50%既居中,垂直0px；<br><br></p>
+<p><font color="red">2)表格中插入背景图片：</font><br><br><br>注意事项：<br><br>通过style属性来设置背景图片和用background属性的效果是不同的。直接上实例：<br><br>①用background属性设置背景图片，图片会重复出现。<br></p>
+<p><img src="https://i.imgur.com/cNTJVVV.png" alt=""></p>
+<p>页面效果：</p>
+<p><img src="https://i.imgur.com/PePXVXg.png" alt=""></p>
+<p>②我们稍微修改一下<table>标签的属性就可以让图片只出现一次——<br>通过style属性来设置背景图片，而不是直接设置background属性，<br>代码如下：<br></table></p>
+<p><img src="https://i.imgur.com/rs1M97F.png" alt=""></p>
+<p>页面效果：</p>
+<p><img src="https://i.imgur.com/JrLBg4c.png" alt=""></p>
+<p>其中，关键点在于后面的值的设置。除了”no-repeat”这个使图片不重<br>复的值，还有以下几个值可选：<br><br>repeat: 平铺整个页面,左右与上下<br><br>repeat-x: 在x轴上平铺,左右<br><br>repeat-y: 在y轴上平铺,上下<br><br>no-repeat: 图片不重复<br><br>inherit: 继承<br><br><br>另外，我们大家平时可能经常需要在表格的单元格内添加图片。除了和上面一样添加图片作为背景外，我们更常用的可能是把图片作为一个元素添加，代码如下：</p>
+<p><img src="https://i.imgur.com/rzVbzGt.png" alt=""></p>
+<p>页面效果：</p>
+<p><img src="https://i.imgur.com/VZXBmHc.png" alt=""></p>
+<p>####<font color="green">3.外部引用式</font>####<br>当样式需要被应用到很多页面的时候，外部样式表将是理想的选择。使用外部样式表，你就可以通过更改一个文件来改变整个站点的外观。<br><br><br>外部引用指HTML文档本身不含有CSS样式，而是动态引用外部的CSS文件定义文档的表现形式。<br><br>&#60;head&#62;<br><br>&#60;link&#160; rel=&#34;stylesheet&#34;&#160; type=”text/css” &#160;href=”mystyle.css”&#62;<br><br>&#60;/head&gt;&#62;<br><br></p>
+<p>###<font color="blue"><b>HTML区块：&#60;div&#62;与&#60;span&#62;</b></font><br><br><b>(1)&#60;div&#62;元素</b><br><br>a：HTML&#60;div&#62;元素是块级元素，它是可用于组合其他 HTML 元素的容器。<br><br>b：如果与 CSS 一同使用，&#60;div&#62;元素可用于对大的内容块设置样式属性。<br><br>c：&#60;div&#62;元素的另一个常见的用途是文档布局。它取代了使用表格定义布局的老式方法。使用 &#60;table&#62;元素进行文档布局不是表格的正确用法。&#60;table&#62;元素的作用是显示表格化的数据。<br><br><b>(2)&#60;span&#62;元素</b><br><br>HTML &#60;span&#62; 元素是内联元素，可用作文本的容器 &#60;span&#62; 元素也没有特定的含义。 当与 CSS 一同使用时，&#60;span&#62; 元素可用于为部分文本设置样式属性。</p>
+<p>###<font color="blue"><b>用css样式，为表格加入边框</b></font><br></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/font-color-FF0000-HTML、CSS-font/" rel="tag"># <font color="#FF0000">HTML、CSS</font></a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/18/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/26/弹性盒模型/" rel="prev" title="<font color="#FF0000">详细介绍弹性盒模型</font>">
+                <font color="#FF0000">详细介绍弹性盒模型</font> <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.png"
+               alt="" />
+          <p class="site-author-name" itemprop="name"></p>
+           
+              <p class="site-description motion-element" itemprop="description">html js</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML"><span class="nav-number">1.</span> <span class="nav-text">HTML</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是HTML"><span class="nav-number">1.1.</span> <span class="nav-text">什么是HTML</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标签的语法"><span class="nav-number">1.2.</span> <span class="nav-text">标签的语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML基础"><span class="nav-number">1.3.</span> <span class="nav-text">HTML基础</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML文档实例"><span class="nav-number">1.4.</span> <span class="nav-text">HTML文档实例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#加入强调语气，使用-60-strong-62-和-60-em-62-标签"><span class="nav-number">1.5.</span> <span class="nav-text">加入强调语气，使用<strong>和<em>标签</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder"></span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
