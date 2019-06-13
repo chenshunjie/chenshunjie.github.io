@@ -97,7 +97,11 @@ var polaroidGallery = (function () {
     }
 
     function select(item) {
-        var scale = 1.8;
+		if(item.id == 0){
+			var scale = 2.4;
+		}else{
+			var scale = 4.1;
+		}
         var rotRandomD = 0;
 
         var initWidth = dataSize[item.id].width;
